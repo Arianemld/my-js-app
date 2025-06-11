@@ -1,12 +1,12 @@
 {
   "name": "my-js-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple Express app with Jest and Supertest for testing.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": ["express", "jest", "supertest"],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -15,5 +15,10 @@
   "devDependencies": {
     "jest": "^30.0.0",
     "supertest": "^7.1.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "transform": {}
   }
 }
