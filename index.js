@@ -3,8 +3,12 @@ const app = express();
 const port = 3000;
 
 // Définir la route pour la nouvelle fonctionnalité
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
 app.get('/new-feature', (req, res) => {
-  res.send('New Feature!');
+  res.send('New Feature Added!');
 });
 
 // Si ce fichier est importé dans un test, ne démarrer le serveur que si c'est le fichier principal
